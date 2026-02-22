@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------- */
+/* BASE LAYER FIXED       */
+/* ---------------------- */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    @apply font-display text-foreground;
+  }
+}
+
+/* ---------------------- */
+/* COMPONENTS (FIXED)     */
+/* ---------------------- */
+@layer components {
+
+  /* Container */
+  .container {
+    @apply mx-auto max-w-7xl;
+  }
+
+  /* Section Padding */
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+
+  /* Typography */
+  .heading-hero {
+    @apply font-display font-bold leading-tight text-4xl md:text-5xl lg:text-6xl text-white;
+  }
+
+  .heading-xl {
+    @apply font-display font-bold leading-tight text-3xl md:text-4xl lg:text-5xl text-foreground;
+  }
+
+  .heading-lg {
+    @apply font-display font-bold leading-tight text-2xl md:text-3xl text-foreground;
+  }
+
+  .heading-md {
+    @apply font-display font-semibold text-xl md:text-2xl text-foreground;
+  }
+
+  /* Strong Blue Text Gradient */
+  .blue-text {
+    background: linear-gradient(90deg, #1E3A8A, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Strong Blue Borders */
+  .blue-border {
+    @apply border-blue-600 hover:border-blue-500 transition-colors;
+  }
+
+  /* Card hover lift (clean) */
+  .card-lift {
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 bg-white;
+  }
+
+  /* Buttons (Fixed – NO GLASS, NO BLUR) */
+  .btn-primary {
+    @apply bg-blue-600 text-white font-medium px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 active:bg-blue-800 transition;
+  }
+
+  .btn-outline {
+    @apply border border-blue-600 text-blue-600 font-medium px-6 py-3 rounded-xl hover:bg-blue-50 transition;
+  }
+}
+
+/* ---------------------- */
+/* UTILITIES (FIXED)      */
+/* ---------------------- */
+@layer utilities {
+
+  /* Stronger, cleaner gradient (not foggy) */
+  .bg-brand-gradient {
+    background: linear-gradient(
+      135deg,
+      #C7D8FF 0%,
+      #6A9BFF 40%,
+      #1E3A8A 100%
+    );
+  }
+
+  /* Animation utilities */
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out both;
+  }
+  .animate-slide-up-2 {
+    animation: slideUp 0.6s ease-out 0.15s both;
+  }
+  .animate-slide-up-3 {
+    animation: slideUp 0.6s ease-out 0.3s both;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out both;
+  }
+}
+
+/* ---------------------- */
+/* KEYFRAMES              */
+/* ---------------------- */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(24px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
