@@ -171,7 +171,7 @@ export default function HomePage() {
             </div>
 
             {/* Stats card */}
-            <div className="relative">
+            {/*   <div className="relative">
               <div className="bg-brand-gradient rounded-2xl p-8 text-white">
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   {[
@@ -197,7 +197,8 @@ export default function HomePage() {
                   Podcast Live Every Week
                 </div>
               </div>
-            </div>
+            </div>   */}
+            
           </div>
         </div>
       </section>
