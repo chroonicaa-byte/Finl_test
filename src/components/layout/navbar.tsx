@@ -293,7 +293,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="Public/logo.png"
               alt="FounderUnfiltered Logo"
               width={40}
               height={40}
