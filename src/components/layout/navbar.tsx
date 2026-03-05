@@ -300,7 +300,7 @@ export function Navbar() {
               className="rounded-lg object-cover shrink-0"
             /> */}
             <Image
-  src="/logo.png"
+  src="/LOGO.png"
   alt="FounderUnfiltered Logo"
   width={40}
   height={40}
