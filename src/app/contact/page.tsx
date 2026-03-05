@@ -298,7 +298,7 @@ export default function ContactPage() {
             <div className="lg:col-span-3">
               <div className="bg-white rounded-2xl border border-border shadow-lg p-8">
 
-                <form
+                {/* <form
                   action="https://api.web3forms.com/submit"
                   method="POST"
                   className="space-y-5"
@@ -398,7 +398,125 @@ export default function ContactPage() {
                     Your message will be delivered directly to our inbox.
                   </p>
 
-                </form>
+                </form> */}
+
+              <form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="space-y-5"
+>
+
+  {/* Web3Forms Access Key */}
+  <input
+    type="hidden"
+    name="access_key"
+    value="a912ae17-e6d6-4b43-8abd-464197b6e56d"
+  />
+
+  {/* Required Spam Protection */}
+  <input
+    type="checkbox"
+    name="botcheck"
+    style={{ display: "none" }}
+  />
+
+  {/* Email Settings */}
+  <input
+    type="hidden"
+    name="subject"
+    value="New FounderUnfiltered Contact Message"
+  />
+
+  <input
+    type="hidden"
+    name="from_name"
+    value="FounderUnfiltered Website"
+  />
+
+  {/* Optional Redirect After Submit */}
+  <input
+    type="hidden"
+    name="redirect"
+    value="https://founders-rouge.vercel.app/contact"
+  />
+
+  {/* Name + Email */}
+  <div className="grid sm:grid-cols-2 gap-5">
+
+    <div className="space-y-1.5">
+      <Label htmlFor="name">Full Name</Label>
+
+      <Input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Vikram Anand"
+        required
+      />
+    </div>
+
+    <div className="space-y-1.5">
+      <Label htmlFor="email">Email</Label>
+
+      <Input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="vikram@company.com"
+        required
+      />
+    </div>
+
+  </div>
+
+  {/* Inquiry */}
+  <div className="space-y-1.5">
+    <Label htmlFor="inquiry">What can we help with?</Label>
+
+    <select
+      id="inquiry"
+      name="inquiry"
+      required
+      className="flex h-11 w-full rounded-lg border bg-white px-4 py-2 text-sm"
+    >
+      <option value="">Select inquiry type…</option>
+
+      {inquiryTypes.map((t) => (
+        <option key={t} value={t}>
+          {t}
+        </option>
+      ))}
+
+    </select>
+  </div>
+
+  {/* Message */}
+  <div className="space-y-1.5">
+    <Label htmlFor="message">Tell us more</Label>
+
+    <Textarea
+      id="message"
+      name="message"
+      rows={5}
+      placeholder="Describe your situation, challenge, or what you're looking for…"
+      required
+    />
+
+  </div>
+
+  {/* Submit */}
+  <button
+    type="submit"
+    className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gold-gradient text-brand-900 font-semibold text-sm shadow-md hover:opacity-90 transition-opacity"
+  >
+    Send Message
+  </button>
+
+  <p className="text-xs text-center text-muted-foreground">
+    Your message will be delivered directly to our inbox.
+  </p>
+
+</form>
 
               </div>
             </div>
