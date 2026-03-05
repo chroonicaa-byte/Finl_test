@@ -292,13 +292,20 @@ export function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <Image
+            {/* <Image
               src="Public/logo.png"
               alt="FounderUnfiltered Logo"
               width={40}
               height={40}
               className="rounded-lg object-cover shrink-0"
-            />
+            /> */}
+            <Image
+  src="/logo.png"
+  alt="FounderUnfiltered Logo"
+  width={40}
+  height={40}
+  className="rounded-lg object-cover shrink-0"
+/>
             <div className="leading-tight">
               <div className="font-display font-bold text-black text-base leading-none">
                 FounderUnfiltered
