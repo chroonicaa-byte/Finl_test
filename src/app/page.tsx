@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Mic, Building2, Users, GraduationCap, Star, ChevronRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'FounderUnfiltered9 – Real HR. Real Business. No Fluff.',
+  title: 'FounderUnfiltered9 – HR Leadership. Real Business Conversations.',
 }
 
 const pillars = [
@@ -82,7 +82,7 @@ export default function HomePage() {
 
             <h1 className="heading-hero text-white mb-6 animate-slide-up">
               HR Leadership.<br />
-              <span className="gold-text">Real Business.</span><br />
+              {/* <span className="gold-text">Real Business.</span><br /> */}
                Real Business Conversations.
             </h1>
 
@@ -247,7 +247,7 @@ export default function HomePage() {
             <Link href="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gold-gradient text-brand-900 font-semibold shadow-xl shadow-gold-500/25 hover:opacity-90 transition-opacity"
             >
-              Book a Free Discovery Call <ArrowRight className="h-5 w-5" />
+              Book a Call <ArrowRight className="h-5 w-5" />
             </Link>
             <Link href="/services"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-white/25 text-white font-medium hover:bg-white/10 transition-colors"
