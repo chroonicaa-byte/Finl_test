@@ -81,13 +81,13 @@ export default function HomePage() {
             </div>
 
             <h1 className="heading-hero text-white mb-6 animate-slide-up">
-              Real HR.<br />
+              HR Leadership.<br />
               <span className="gold-text">Real Business.</span><br />
-              No Fluff.
+               Real Business Conversations.
             </h1>
 
             <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl animate-slide-up-2">
-              Whether you're a founder trying to stay compliant, an SME building your first HR system, or a professional navigating your career — we give you HR insight from the inside.
+              Through this platform, I combine my HR expertise with meaningful conversations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-3">
