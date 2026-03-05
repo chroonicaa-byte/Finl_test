@@ -14,8 +14,15 @@ export function Footer() {
                 <span className="text-brand-900 font-bold text-sm font-display">FU</span>
               </div>
               <div className="leading-tight">
-                <div className="font-display font-bold text-white">FounderUnfiltered</div>
-                <div className="text-gold-400 text-xs tracking-widest">9</div>
+                {/* <div className="font-display font-bold text-white">FounderUnfiltered</div>
+                <div className="text-gold-400 text-xs tracking-widest">9</div> */}
+                            <Image
+  src="/LOGO.png"
+  alt="FounderUnfiltered Logo"
+  width={40}
+  height={40}
+  className="rounded-lg object-cover shrink-0"
+/>
               </div>
             </div>
             <p className="text-white/65 text-sm leading-relaxed max-w-sm">
