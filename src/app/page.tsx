@@ -7,14 +7,7 @@ export const metadata: Metadata = {
 }
 
 const pillars = [
-  {
-    icon: Building2,
-    label: 'For Founders & SMEs',
-    title: 'HR that keeps your business legal and your team running',
-    desc: 'Payroll compliance, policy setup, and fractional HR — without the cost of a full-time team.',
-    href: '/services#business',
-    color: 'from-brand-800 to-brand-900',
-  },
+
   {
     icon: GraduationCap,
     label: 'For Professionals & Freshers',
@@ -26,8 +19,8 @@ const pillars = [
   {
     icon: Mic,
     label: 'The Podcast',
-    title: 'FounderUnfiltered9 — HR conversations without the corporate script',
-    desc: 'Real problems, real answers. Book paid strategy sessions with the host.',
+    title: 'Founders Unfiltered9 is a podcast where we break down real business journeys ',
+    desc: 'From zero to profitability. No gyaan, no theory — only practical insights, mistakes, and systems that actually work.',
     href: '/podcast',
     color: 'from-slate-700 to-slate-800',
   },
@@ -77,7 +70,8 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-gold-300 text-sm font-medium mb-8 animate-fade-in">
               <Mic className="h-3.5 w-3.5" />
-              <span>HR Consulting · Training · Career Advisory · Podcast</span>
+              {/* <span>HR Consulting · Training · Career Advisory · Podcast</span> */}
+              <span>Consulting · Training · Career Advisory · Podcast</span>
             </div>
 
             <h1 className="heading-hero text-white mb-6 animate-slide-up">
@@ -118,9 +112,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-gold-600 text-sm font-semibold tracking-widest uppercase mb-3">What We Do</p>
-            <h2 className="heading-xl text-foreground mb-4">Three Ways We Help You</h2>
+            <h2 className="heading-xl text-foreground mb-4">We Help You In</h2>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-              Business HR, career advisory, and a podcast — all built on one thing: real HR experience.
+              Business , career advisory, and a podcast — all built on one thing: real HR experience.
             </p>
           </div>
 
