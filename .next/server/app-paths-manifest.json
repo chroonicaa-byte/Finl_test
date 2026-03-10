@@ -1,4 +1,8 @@
 {
-  "/podcast/page": "app/podcast/page.js",
-  "/page": "app/page.js"
+  "/services/page": "app/services/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/podcast/page": "app/podcast/page.js"
 }

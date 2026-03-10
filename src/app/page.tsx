@@ -27,12 +27,10 @@ const pillars = [
 ]
 
 const trustPoints = [
-  'Statutory compliance — PF, ESI, labour law',
-  'Fractional HR for teams of 2 to 200',
-  'Career coaching by real HR professionals',
-  'HR training workshops for founders & managers',
-  'Resume & LinkedIn advisory backed by HR insight',
-  'Podcast-driven strategy sessions',
+  'Real conversations with founders and professionals',
+  'Insights from real business journeys',
+  'Practical career guidance from HR leaders',
+  'Lessons from hiring mistakes and leadership decisions',
 ]
 
 const testimonials = [
@@ -75,20 +73,21 @@ export default function HomePage() {
             </div>
 
             <h1 className="heading-hero text-white mb-6 animate-slide-up">
-              HR Leadership.<br />
-              {/* <span className="gold-text">Real Business.</span><br /> */}
-               Real Business Conversations.
+              Real People.<br />
+              <span className="gold-text">Real Business.</span><br />
+               Real Growth.
             </h1>
 
             <p className="text-white/75 text-xl leading-relaxed mb-10 max-w-2xl animate-slide-up-2">
-              Through this platform, I combine my HR expertise with meaningful conversations.
+              Real HR conversations for founders, professionals, and anyone navigating the world of work.
+No corporate scripts. Only practical insights.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-3">
               <Link href="/services"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gold-gradient text-brand-900 font-semibold text-base shadow-xl shadow-gold-500/25 hover:opacity-90 transition-opacity"
               >
-                Explore Services <ArrowRight className="h-5 w-5" />
+                Enquire Now <ArrowRight className="h-5 w-5" />
               </Link>
               <Link href="/podcast"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-white/25 text-white font-medium text-base hover:bg-white/10 transition-colors"
@@ -118,7 +117,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {pillars.map((p) => (
               <Link key={p.title} href={p.href}
                 className="group relative rounded-2xl overflow-hidden card-lift border border-border bg-white"
@@ -233,7 +232,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-hero-pattern opacity-100" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-gold-500/10 blur-3xl" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="heading-xl text-white mb-5">Ready for HR That Actually Works?</h2>
+          <h2 className="heading-xl text-white mb-5">Let’s Talk About Real Work and Real Business.</h2>
           <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
             Whether you need compliance support, a fractional HR partner, or career coaching — let's talk.
           </p>

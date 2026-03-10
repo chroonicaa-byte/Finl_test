@@ -12,12 +12,13 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-9 h-9 rounded-lg bg-gold-gradient flex items-center justify-center">
-                <span className="text-brand-900 font-bold text-sm font-display">FU</span>
+                {/* <span className="text-brand-900 font-bold text-sm font-display">FU</span> */}
+                <Image src="/LOGO.png" alt="FounderUnfiltered Logo" width={40} height={40} className="rounded-lg object-cover shrink-0" />
               </div>
               <div className="leading-tight">
                 {/* <div className="font-display font-bold text-white">FounderUnfiltered</div>
                 <div className="text-gold-400 text-xs tracking-widest">9</div> */}
-                    <Image src="/LOGO.png" alt="FounderUnfiltered Logo" width={40} height={40} className="rounded-lg object-cover shrink-0" />
+                    {/* <Image src="/LOGO.png" alt="FounderUnfiltered Logo" width={40} height={40} className="rounded-lg object-cover shrink-0" /> */}
               </div>
             </div>
             <p className="text-white/65 text-sm leading-relaxed max-w-sm">
@@ -59,7 +60,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {[
                 { label: 'About', href: '/about' },
-                { label: 'Pricing', href: '/pricing' },
+                // { label: 'Pricing', href: '/pricing' },
                 { label: 'Podcast', href: '/podcast' },
                 { label: 'Contact', href: '/contact' },
               ].map((l) => (
